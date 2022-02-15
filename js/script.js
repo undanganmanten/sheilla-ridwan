@@ -100,7 +100,7 @@ var firebaseConfig = {
   
     if(input_box.value.length != 0 && input_date.value.length != 0){
       // our boxes have data and we take database
-      var key = firebase.database().ref().child("comments").push().key;
+      var key = firebase.database().ref().child("sheilla").push().key;
       var task = {
         title: input_box.value,
         date: input_date.value,
@@ -108,7 +108,7 @@ var firebaseConfig = {
       };
   
       var updates = {};
-      updates["/comments/" + key] = task;
+      updates["/sheilla/" + key] = task;
       firebase.database().ref().update(updates);
       create_unfinished_task();
       document.getElementById("name").value=''; 
@@ -122,7 +122,7 @@ function create_unfinished_task(){
     unfinished_task_container.innerHTML = "";
   
     task_array = [];
-    firebase.database().ref("comments").once('value', function(snapshot) {
+    firebase.database().ref("sheilla").once('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var childKey = childSnapshot.key;
         var childData = childSnapshot.val();
