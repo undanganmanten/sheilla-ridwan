@@ -237,6 +237,15 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.title .nama-undangan{
+  display: flex;
+  justify-content: center;
+}
+
+.title .nama-undangan h3{
+  margin: 5px;
+}
+
 .title h3{
   color: black;
   font-family: 'Playfair Display', serif;
