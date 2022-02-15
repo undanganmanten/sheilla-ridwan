@@ -1,2 +1,2 @@
-# mita-rizki
-see the prototype <a href="http://undanganmanten.my.id/mita-rizki" target="_blank">here</a>
+# sheilla ridwan
+see the prototype <a href="http://undanganmanten.my.id/sheilla-ridwan" target="_blank">here</a>
